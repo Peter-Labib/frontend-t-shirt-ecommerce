@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import MainNav from './components/Navigation/MainNav'
+import HomeScreen from './components/products/pages/HomeScreen'
+import { Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <MainNav />
+      <div className='mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8'>
+        <Route path='/' exact>
+          <HomeScreen />
+        </Route>
+      </div>
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
