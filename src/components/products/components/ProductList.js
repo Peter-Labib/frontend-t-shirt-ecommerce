@@ -54,9 +54,9 @@ const products = [
 ]
 const ProductList = () => {
   return (
-    <div className='bg-white'>
+    <div>
         <h1>Lateset products</h1>
-        <div className='grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8'>
+        <div className='grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7'>
           {products.map((prod) => (
             <Product
               key={prod.id}

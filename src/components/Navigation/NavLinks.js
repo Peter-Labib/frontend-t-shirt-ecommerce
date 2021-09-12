@@ -1,5 +1,5 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const NavLinks = () => {
@@ -12,10 +12,10 @@ const NavLinks = () => {
         <a href='#'>Women</a>
       </li>
       <li>
-        <a href='#'>Sign in</a>
+        <NavLink to='/signin'>Sign in</NavLink>
       </li>
       <li>
-        <a href='#'>Create account</a>
+        <NavLink to='/createuser'>Create account</NavLink>
       </li>
     </ul>
   )

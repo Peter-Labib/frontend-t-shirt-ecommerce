@@ -8,6 +8,10 @@ const CartProduct = () => {
             </div>
             {/* contain all details of product */}
             <div className='flex flex-auto'>
+                <div>
+                    <h4>item name</h4>
+                    
+                </div>
 
             </div>
             
