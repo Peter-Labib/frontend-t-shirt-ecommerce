@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import brand from '../../assets/t_shirt_icon_157416.ico'
+import brand from '../../assets/imgs/t_shirt_icon_157416.ico'
 
 const Signin = () => {
   return (

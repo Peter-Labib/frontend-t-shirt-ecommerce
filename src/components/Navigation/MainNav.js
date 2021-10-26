@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MenuIcon, ShoppingBagIcon } from '@heroicons/react/outline'
 
-import brand from '../../assets/t_shirt_icon_157416.ico'
+import brand from '../../assets/imgs/t_shirt_icon_157416.ico'
 import MainHeader from './MainHeader'
 import SideDrawer from './SideDrawer'
 import NavLinks from './NavLinks'
@@ -32,7 +32,6 @@ const MainNav = () => {
             </button>
             <Link
               to='/'
-              exact
               className='flex justify-center items-center ml-2 lg:ml-0'
             >
               <img className='h-6' src={brand} alt='logo' />
